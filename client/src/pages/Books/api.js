@@ -3,7 +3,7 @@ const token = localStorage.getItem('authToken');
 export const getBooks = async () => {
   try {
     console.log(token);
-    const response = await axios.get('http://localhost:8082/api/books', {
+    const response = await axios.get('https://book-xplorer.onrender.com/api/books', {
       headers: {
         'Authorization': `Bearer ${token}`,
       }
@@ -20,7 +20,7 @@ export const getBooks = async () => {
 // Delete a book
 export const deleteBook = async (id) => {
   try {
-    const response = await axios.delete(`http://localhost:8082/api/books/${id}`, {
+    const response = await axios.delete(`https://book-xplorer.onrender.com/api/books/${id}`, {
       headers: {
         'Authorization': `Bearer ${token}`,
       }

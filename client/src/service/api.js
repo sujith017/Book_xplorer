@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = 'http://localhost:8082';
+const URL = 'https://book-xplorer.onrender.com';
 
 export const getBooks = async () => {
   try {

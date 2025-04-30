@@ -22,7 +22,7 @@ const BookBlock = (props) => {
     };
 
     try {
-      const response = await fetch('http://localhost:8082/api/books', {
+      const response = await fetch('https://book-xplorer.onrender.com/api/books', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

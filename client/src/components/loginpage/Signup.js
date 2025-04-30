@@ -37,7 +37,7 @@ const SignUp = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8082/api/auth/signup', { // Change to your actual sign-up endpoint
+      const response = await fetch('https://book-xplorer.onrender.com/api/auth/signup', { // Change to your actual sign-up endpoint
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const SignUp = () => {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8082/api/auth/update', {  
+      const response = await fetch('https://book-xplorer.onrender.com/api/auth/update', {  
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
